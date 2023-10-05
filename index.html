@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about coding and get to know some interesting projects">
+    <title>Code Caffe</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.10/lottie.min.js"></script>
+</head>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./images/wepik-linear-monocolor-caffe-della-nonna-logo-20230812202956MHCm.png" width="150px ">
+        <nav class="menu">
+            <a class="header-menu-item" href="index.html">Home</a>
+            <a class="header-menu-item" href="./pages/projects.html">Projects</a>
+            <a class="header-menu-item" href="./pages/aboume.html">About Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-content">
+            <div class="main-content-text">
+                <h1 class="main-content-text-title">Welcome</h1>
+                <p class="main-content-text-subtitle">
+                    Lorem ipsum dolor sit amet. Et nisi quasi qui eligendi amet sed ipsum reprehenderit et ratione asperiores est esse omnis et architecto. 
+                </p>
+                <button class="main-content-text-button">Discover</button>
+            </div>
+            <svg class="main-content-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#EDF5FC" d="M56.1,-45.4C65.7,-32.8,61.5,-9.9,54,8C46.4,25.8,35.5,38.5,21.7,45.1C7.9,51.8,-8.9,52.5,-28.7,47.5C-48.5,42.6,-71.4,32.1,-74.3,17.5C-77.2,2.9,-60.1,-15.7,-44.4,-29.7C-28.6,-43.8,-14.3,-53.3,4.5,-56.9C23.3,-60.5,46.6,-58.1,56.1,-45.4Z" transform="translate(100 100)" />
+            </svg>              
+            <div id="main-content-image"></div>
+        </section>
+    </main>
+    <script>
+        var animationContainer = document.getElementById('main-content-image');
+        var animation = bodymovin.loadAnimation({
+            container: animationContainer, // Container to render the animation
+            renderer: 'svg',               // Choose the renderer (svg or canvas)
+            loop: true,                   // Set loop to true or false
+            autoplay: true,               // Set autoplay to true or false
+            path: './images/coffe.json' // Path to your Lottie JSON file
+        });
+    </script>
+    
+</body>
+</html>
+
+
